@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomEasier - Servicios para tu hogar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="css/bootstrap-custom.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/membrete.png" alt="HomEasier Logo" height="40">
+                HomEasier
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services/index.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" href="register.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Encuentra los mejores servicios de limpieza para tu hogar</h1>
+                    <p class="lead mb-4">Contrata profesionales de limpieza, mantenimiento y más con solo unos clics.</p>
+                    <div class="d-flex gap-3">
+                        <a href="services/index.html" class="btn btn-light btn-lg">Ver Servicios</a>
+                        <a href="register.html" class="btn btn-outline-light btn-lg">Registrarse</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="img/portada.png" alt="Servicios del hogar" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nuestros Servicios Populares</h2>
+                <p class="text-muted">Elige entre una variedad de servicios profesionales para tu hogar</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <img src="img/Cleaning_Services.png" class="card-img-top" alt="Limpieza del hogar">
+                        <div class="card-body">
+                            <h5 class="card-title">Limpieza General</h5>
+                            <p class="card-text">Servicio completo de limpieza para tu hogar, incluyendo cocina, baños y áreas comunes.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary">$50.000</span>
+                                <a href="services/detail.html" class="btn btn-sm btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <img src="img/plumbers.PNG" class="card-img-top" alt="Fontanería">
+                        <div class="card-body">
+                            <h5 class="card-title">Reparación Fontanería</h5>
+                            <p class="card-text">Solucionamos problemas de tuberías, grifería y sistemas de agua en tu hogar.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary">$75.000</span>
+                                <a href="services/detail.html" class="btn btn-sm btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <img src="img/electricista.PNG" class="card-img-top" alt="Electricidad">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio Eléctrico</h5>
+                            <p class="card-text">Instalaciones, reparaciones y mantenimiento eléctrico por profesionales certificados.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary">$65.000</span>
+                                <a href="services/detail.html" class="btn btn-sm btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="services/index.html" class="btn btn-primary btn-lg">Ver Todos los Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">¿Cómo Funciona?</h2>
+                <p class="text-muted">Contratar un servicio nunca fue tan fácil</p>
+            </div>
+            
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow-sm">
+                        <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                            <i class="fas fa-search fa-2x"></i>
+                        </div>
+                        <h4>1. Busca</h4>
+                        <p class="text-muted">Encuentra el servicio que necesitas en nuestro catálogo.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow-sm">
+                        <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                            <i class="fas fa-calendar-check fa-2x"></i>
+                        </div>
+                        <h4>2. Agenda</h4>
+                        <p class="text-muted">Selecciona la fecha y hora que mejor te convenga.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow-sm">
+                        <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                            <i class="fas fa-home fa-2x"></i>
+                        </div>
+                        <h4>3. Disfruta</h4>
+                        <p class="text-muted">Recibe al profesional en tu hogar y disfruta del servicio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Lo que dicen nuestros clientes</h2>
+                <p class="text-muted">Experiencias reales de usuarios satisfechos</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text">"Excelente servicio de limpieza. El profesional llegó puntual y dejó mi casa impecable. ¡Totalmente recomendado!"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" class="rounded-circle me-3" width="50" alt="Cliente">
+                                <div>
+                                    <h6 class="mb-0">María González</h6>
+                                    <small class="text-muted">Cliente desde 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text">"Rápida solución a mi problema de fontanería. El técnico fue muy profesional y explicó todo claramente."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-circle me-3" width="50" alt="Cliente">
+                                <div>
+                                    <h6 class="mb-0">Carlos Martínez</h6>
+                                    <small class="text-muted">Cliente desde 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="card-text">"Muy buena plataforma. Fácil de usar y con profesionales calificados. Volveré a contratar sin duda."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle me-3" width="50" alt="Cliente">
+                                <div>
+                                    <h6 class="mb-0">Laura Rodríguez</h6>
+                                    <small class="text-muted">Cliente desde 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">¿Listo para simplificar el cuidado de tu hogar?</h2>
+            <p class="lead mb-5">Regístrate ahora y obtén un 10% de descuento en tu primer servicio.</p>
+            <a href="register.html" class="btn btn-light btn-lg px-5">Registrarse Gratis</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="mb-3">HomEasier</h5>
+                    <p>La plataforma líder en servicios de limpieza y mantenimiento del hogar.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Inicio</a></li>
+                        <li class="mb-2"><a href="services/index.html" class="text-white">Servicios</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white">Acerca de</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3">Legal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">Términos</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Privacidad</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Ciudad, País</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 234 567 890</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@homeasier.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 HomEasier. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>
