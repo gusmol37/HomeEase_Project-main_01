@@ -34,3 +34,4 @@ Tecnologías utilizadas
   - XAMPP
   - Git & GitHub
  
+![miniatura_homeasier](https://github.com/user-attachments/assets/87f4f56a-5067-4797-b38d-19d5f56cbe7e)
