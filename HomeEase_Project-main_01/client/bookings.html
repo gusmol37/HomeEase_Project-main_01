@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Reservas | HomEasier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="img/membrete copy.png" alt="HomEasier Logo" height="40">
+                HomEasier
+            </a>
+            <!-- Menú del cliente -->
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="mb-0">Mis Reservas Activas</h1>
+            <a href="../services/index.html" class="btn btn-primary">
+                <i class="fas fa-plus me-1"></i> Nuevo Servicio
+            </a>
+        </div>
+
+        <!-- Pestañas -->
+        <ul class="nav nav-tabs mb-4">
+            <li class="nav-item">
+                <a class="nav-link active" href="bookings.html">Activas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="history.html">Historial</a>
+            </li>
+        </ul>
+
+        <!-- Listado de reservas -->
+        <div class="row" id="activeBookings">
+            <!-- Reserva 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 border-start border-4 border-primary">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Limpieza Profunda</h5>
+                            <span class="badge bg-warning text-dark">Pendiente</span>
+                        </div>
+                        <p class="text-muted">Proveedor: Limpieza Total SAS</p>
+                        
+                        <div class="mb-3">
+                            <p class="mb-1"><i class="far fa-calendar-alt text-primary me-2"></i> 25/05/2023</p>
+                            <p class="mb-1"><i class="far fa-clock text-primary me-2"></i> 14:00 - 16:00 (2 horas)</p>
+                            <p class="mb-1"><i class="fas fa-map-marker-alt text-primary me-2"></i> Cra 12 #34-56, Bogotá</p>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="text-primary mb-0">$120.000 COP</h5>
+                            <div>
+                                <button class="btn btn-sm btn-outline-danger me-2 cancel-booking" data-id="1">
+                                    Cancelar
+                                </button>
+                                <button class="btn btn-sm btn-primary view-details" data-id="1">
+                                    Detalles
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reserva 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 border-start border-4 border-success">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Reparación Fontanería</h5>
+                            <span class="badge bg-success">Confirmado</span>
+                        </div>
+                        <p class="text-muted">Proveedor: Fontanería Express</p>
+                        
+                        <div class="mb-3">
+                            <p class="mb-1"><i class="far fa-calendar-alt text-primary me-2"></i> 28/05/2023</p>
+                            <p class="mb-1"><i class="far fa-clock text-primary me-2"></i> 10:00 - 12:00 (2 horas)</p>
+                            <p class="mb-1"><i class="fas fa-map-marker-alt text-primary me-2"></i> Cra 12 #34-56, Bogotá</p>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="text-primary mb-0">$90.000 COP</h5>
+                            <div>
+                                <button class="btn btn-sm btn-outline-danger me-2 cancel-booking" data-id="2">
+                                    Cancelar
+                                </button>
+                                <button class="btn btn-sm btn-primary view-details" data-id="2">
+                                    Detalles
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sin reservas -->
+        <div class="text-center py-5 d-none" id="noBookings">
+            <img src="../../assets/img/no-bookings.svg" alt="Sin reservas" class="img-fluid mb-4" style="max-width: 300px;">
+            <h4>No tienes reservas activas</h4>
+            <p class="text-muted">Cuando hagas una reserva, aparecerá aquí</p>
+            <a href="../services/index.html" class="btn btn-primary mt-3">
+                <i class="fas fa-plus me-1"></i> Reservar Servicio
+            </a>
+        </div>
+    </main>
+
+    <!-- Modal Cancelación -->
+    <div class="modal fade" id="cancelModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">Confirmar Cancelación</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Estás seguro que deseas cancelar esta reserva?</p>
+                    <p><strong>Política de cancelación:</strong> Las cancelaciones con menos de 24 horas de anticipación pueden tener cargos.</p>
+                    <div class="mb-3">
+                        <label for="cancelReason" class="form-label">Motivo (opcional)</label>
+                        <textarea class="form-control" id="cancelReason" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+                    <button type="button" class="btn btn-danger" id="confirmCancel">Confirmar Cancelación</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Manejar clic en cancelar
+            document.querySelectorAll('.cancel-booking').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const bookingId = this.getAttribute('data-id');
+                    document.getElementById('confirmCancel').setAttribute('data-id', bookingId);
+                    new bootstrap.Modal(document.getElementById('cancelModal')).show();
+                });
+            });
+
+            // Confirmar cancelación
+            document.getElementById('confirmCancel').addEventListener('click', function() {
+                const bookingId = this.getAttribute('data-id');
+                alert(`Reserva #${bookingId} cancelada exitosamente`);
+                new bootstrap.Modal(document.getElementById('cancelModal')).hide();
+                // Aquí iría la lógica AJAX para cancelar en el backend
+            });
+
+            // Simular que no hay reservas (para demostración)
+            // document.getElementById('activeBookings').classList.add('d-none');
+            // document.getElementById('noBookings').classList.remove('d-none');
+        });
+    </script>
+</body>
+</html>

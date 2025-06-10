@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Proveedor | HomEasier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../img/membrete.png" alt="HomEasier Logo" height="40"> 
+                HomEasier - Proveedor
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-user-circle me-1"></i> Carlos Mendoza
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="profile.html">Mi Perfil</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../../auth/login.html">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 col-lg-2 bg-light sidebar">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="dashboard.html">
+                                <i class="fas fa-tachometer-alt me-2"></i> Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">
+                                <i class="fas fa-concierge-bell me-2"></i> Mis Servicios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bookings.html">
+                                <i class="fas fa-calendar-check me-2"></i> Reservas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reviews.html">
+                                <i class="fas fa-star me-2"></i> Reseñas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="earnings.html">
+                                <i class="fas fa-money-bill-wave me-2"></i> Ingresos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="h3 mb-0">Bienvenido, Carlos</h2>
+                    <a href="services/add.html" class="btn btn-primary">
+                        <i class="fas fa-plus me-2"></i> Nuevo Servicio
+                    </a>
+                </div>
+                
+                <!-- Stats Cards -->
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card text-white bg-primary mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Reservas Hoy</h5>
+                                <p class="card-text display-6">3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white bg-success mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingresos (mes)</h5>
+                                <p class="card-text display-6">$2.8M</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white bg-warning mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Valoración</h5>
+                                <p class="card-text display-6">4.7/5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Próximas Reservas -->
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Próximas Reservas</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Cliente</th>
+                                        <th>Servicio</th>
+                                        <th>Fecha/Hora</th>
+                                        <th>Estado</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#1256</td>
+                                        <td>María González</td>
+                                        <td>Limpieza General</td>
+                                        <td>15 Mar - 10:00 AM</td>
+                                        <td><span class="badge bg-success">Confirmado</span></td>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-outline-primary">Detalles</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1255</td>
+                                        <td>Juan Pérez</td>
+                                        <td>Limpieza de Muebles</td>
+                                        <td>16 Mar - 2:00 PM</td>
+                                        <td><span class="badge bg-warning">Pendiente</span></td>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-outline-primary">Confirmar</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reseñas Recientes -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0">Reseñas Recientes</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <img src="https://randomuser.me/api/portraits/women/32.jpg" class="rounded-circle me-3" width="50" alt="Cliente">
+                                    <div>
+                                        <div class="text-warning mb-1">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="mb-1">Excelente servicio, muy profesional y puntual.</p>
+                                        <small class="text-muted">María González - 14 Mar 2023</small>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="d-flex">
+                                    <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-circle me-3" width="50" alt="Cliente">
+                                    <div>
+                                        <div class="text-warning mb-1">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <p class="mb-1">Buen trabajo, pero llegó 15 minutos tarde.</p>
+                                        <small class="text-muted">Carlos Martínez - 10 Mar 2023</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0">Disponibilidad</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label class="form-label">Próximos 7 días</label>
+                                    <div class="list-group">
+                                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                                            <span>Lunes 13 Mar</span>
+                                            <span class="badge bg-success">Disponible</span>
+                                        </div>
+                                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                                            <span>Martes 14 Mar</span>
+                                            <span class="badge bg-success">Disponible</span>
+                                        </div>
+                                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                                            <span>Miércoles 15 Mar</span>
+                                            <span class="badge bg-danger">Completo</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="availability.html" class="btn btn-outline-primary w-100">Gestionar Disponibilidad</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

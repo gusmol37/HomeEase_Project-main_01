@@ -1,0 +1,118 @@
+:root {
+    --primary: #1a237e;
+    --primary-light: #3949ab;
+    --primary-dark: #0d1540;
+    --secondary: #ff9800;
+    --secondary-light: #ffc107;
+    --secondary-dark: #f57c00;
+    --success: #4caf50;
+    --info: #00bcd4;
+    --warning: #ffeb3b;
+    --danger: #f44336;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #6c757d;
+    --gray-light: #e9ecef;
+    --gray-dark: #343a40;
+}
+
+/* Custom buttons */
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-secondary {
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-outline-secondary:hover {
+    color: var(--dark);
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+/* Custom alerts */
+.alert-primary {
+    color: var(--primary-dark);
+    background-color: rgba(26, 35, 126, 0.1);
+    border-color: rgba(26, 35, 126, 0.3);
+}
+
+/* Custom cards */
+.card {
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+/* Custom forms */
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(26, 35, 126, 0.25);
+}
+
+/* Custom navbar */
+.navbar {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: var(--white);
+    padding: 5rem 0;
+    margin-bottom: 3rem;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Service cards */
+.service-card {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 0;
+        text-align: center;
+    }
+    
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+}
