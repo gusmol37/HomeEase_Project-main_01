@@ -3,7 +3,7 @@ HomeEase_Project-main_01
 HomEasier
 
 **HomEasier** es una aplicación web diseñada para facilitar la contratación de servicios de limpieza y mantenimiento del hogar. Ofrece una experiencia intuitiva tanto para clientes como para proveedores, permitiendo el registro, la gestión de servicios, la consulta del historial de contrataciones y el pago en línea con confirmación.
-
+![miniatura_homeasier](https://github.com/user-attachments/assets/87f4f56a-5067-4797-b38d-19d5f56cbe7e)
 Características principales
 
 - Registro y autenticación para clientes y proveedores.
@@ -34,4 +34,3 @@ Tecnologías utilizadas
   - XAMPP
   - Git & GitHub
  
-![miniatura_homeasier](https://github.com/user-attachments/assets/87f4f56a-5067-4797-b38d-19d5f56cbe7e)
